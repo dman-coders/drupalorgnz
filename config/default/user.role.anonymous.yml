@@ -1,0 +1,18 @@
+uuid: fd73575d-629c-4df4-b528-d6368192944a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access news feeds'
+  - 'access site map'
+  - 'access user profiles'
+  - 'search content'
+  - 'view Terms and Conditions'
+  - 'view media'

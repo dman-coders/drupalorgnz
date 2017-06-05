@@ -1,0 +1,23 @@
+uuid: 3a121068-9de6-48d4-a09a-99f6be9c1dfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter
+    - node.type.company
+  module:
+    - link
+id: node.company.field_twitter
+field_name: field_twitter
+entity_type: node
+bundle: company
+label: Twitter
+description: 'If you have a twitter account, place the URL here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

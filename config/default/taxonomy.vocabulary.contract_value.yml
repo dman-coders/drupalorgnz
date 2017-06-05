@@ -1,0 +1,9 @@
+uuid: 17389e98-dace-496d-9f93-57407c2c5f6e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contract value'
+vid: contract_value
+description: 'The value of a contract or job of work that the company will undertake'
+hierarchy: 0
+weight: 0

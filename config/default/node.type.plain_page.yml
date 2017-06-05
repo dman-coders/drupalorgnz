@@ -1,0 +1,17 @@
+uuid: 6621d260-054a-4ae6-93af-26d8da7f3d88
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Plain Page'
+type: plain_page
+description: 'A plain page that can appear in a menu (Lightning)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

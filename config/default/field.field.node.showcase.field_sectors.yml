@@ -1,0 +1,21 @@
+uuid: b17f95ce-c9e8-41fa-9f09-d3bd12e0b111
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sectors
+    - node.type.showcase
+id: node.showcase.field_sectors
+field_name: field_sectors
+entity_type: node
+bundle: showcase
+label: Sectors
+description: 'Select to business sector or sectors for this website. Hold "CTRL" to click on multiple entries'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

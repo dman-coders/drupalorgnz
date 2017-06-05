@@ -1,0 +1,30 @@
+uuid: 1b8723be-12d2-4c0e-9170-3697791bca73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company
+    - node.type.company
+    - node.type.showcase
+id: node.showcase.field_company
+field_name: field_company
+entity_type: node
+bundle: showcase
+label: Company
+description: 'The company or companies involved with development of the site. Any referenced company must already have a profile on drupal.net.nz.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      company: company
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

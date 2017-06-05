@@ -1,0 +1,9 @@
+uuid: 3d2b8514-7f15-498a-8b82-a59f3f7f1ada
+langcode: en
+status: true
+dependencies: {  }
+name: Size
+vid: size
+description: 'Company size based on staff and turnover'
+hierarchy: 0
+weight: 0

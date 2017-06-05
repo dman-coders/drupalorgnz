@@ -1,0 +1,20 @@
+uuid: ab7bcacb-296a-41fc-b983-3337a522379e
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_special_expertise
+field_name: field_special_expertise
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 10
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: 48179c96-3755-408d-9d8c-770f9244508b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.plain_page.body
+    - field.field.node.plain_page.field_attachments
+    - field.field.node.plain_page.field_page_image
+    - node.type.plain_page
+  module:
+    - text
+    - user
+id: node.plain_page.teaser
+targetEntityType: node
+bundle: plain_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_attachments: true
+  field_page_image: true

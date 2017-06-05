@@ -1,0 +1,21 @@
+uuid: 74b0de90-f248-4750-910b-331273fb8705
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_launch_date
+    - node.type.showcase
+  module:
+    - datetime
+id: node.showcase.field_launch_date
+field_name: field_launch_date
+entity_type: node
+bundle: showcase
+label: 'Launch date'
+description: 'Approximately, when did the website go live to the audience.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

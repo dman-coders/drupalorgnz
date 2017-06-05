@@ -1,0 +1,38 @@
+uuid: 3131a8f9-3877-4990-96f6-cfe972c4972c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow
+    - node.type.showcase
+  module:
+    - image
+id: node.showcase.field_slideshow
+field_name: field_slideshow
+entity_type: node
+bundle: showcase
+label: 'Slideshow images'
+description: 'Please upload some great examples of the website. Showcase it to others. Show off the neat functionality.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  alt_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  file_directory: showcase
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '8 MB'
+  max_resolution: ''
+  min_resolution: 500x200
+  title_field: true
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

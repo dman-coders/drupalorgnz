@@ -1,0 +1,31 @@
+uuid: cf40aec8-5ac5-4ed7-bed5-cec40b60b94e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access news feeds'
+  - 'access own broken links report'
+  - 'access own webform results'
+  - 'access own webform submissions'
+  - 'access site map'
+  - 'access user profiles'
+  - 'cancel account'
+  - 'change own username'
+  - 'create company content'
+  - 'create showcase content'
+  - 'delete own company content'
+  - 'delete own showcase content'
+  - 'edit own company content'
+  - 'edit own showcase content'
+  - 'edit terms in 6'
+  - 'use text format filtered_html'
+  - 'view Terms and Conditions'
+  - 'view media'
+  - 'view own unpublished content'

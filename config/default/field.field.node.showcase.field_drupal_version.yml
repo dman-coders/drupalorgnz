@@ -1,0 +1,23 @@
+uuid: 4efdb4a2-39ae-469e-8868-5a167484ed52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_version
+    - node.type.showcase
+id: node.showcase.field_drupal_version
+field_name: field_drupal_version
+entity_type: node
+bundle: showcase
+label: 'Drupal version'
+description: 'Version of Drupal used to build the site'
+required: false
+translatable: false
+default_value:
+  -
+    tid: '69'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

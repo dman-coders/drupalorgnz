@@ -1,0 +1,21 @@
+uuid: bc2545a2-c271-4014-addb-d2c378d10665
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_contribution_areas
+    - node.type.company
+id: node.company.field_drupal_contribution_areas
+field_name: field_drupal_contribution_areas
+entity_type: node
+bundle: company
+label: 'Drupal Contribution Areas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

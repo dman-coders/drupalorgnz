@@ -1,0 +1,24 @@
+uuid: 81b7acc6-923c-406f-ae9a-88846579a6e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-navigation
+  module:
+    - system
+  theme:
+    - bartik
+id: drupalnetnz_menu_menu_footer_navigation
+theme: bartik
+region: footer_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-footer-navigation'
+settings:
+  id: broken
+  label: 'Footer navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

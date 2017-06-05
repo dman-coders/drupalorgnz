@@ -1,0 +1,18 @@
+uuid: a2c6f319-e7a8-4d3d-8980-5dfddd71072f
+langcode: en
+status: true
+dependencies: {  }
+id: plain_page_reviewer
+label: 'Plain Page reviewer'
+weight: 10
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'delete any plain_page content'
+  - 'edit any plain_page content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_archived transition'
+  - 'use published_published transition'
+  - 'view moderation states'

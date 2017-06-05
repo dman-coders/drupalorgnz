@@ -1,0 +1,89 @@
+uuid: 30541b4a-4fca-42e2-8154-1b475c08e5da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.plain_page.body
+    - field.field.node.plain_page.field_attachments
+    - field.field.node.plain_page.field_page_image
+    - image.style.thumbnail
+    - node.type.plain_page
+  module:
+    - file
+    - image
+    - path
+    - text
+    - workbench_moderation
+id: node.plain_page.default
+targetEntityType: node
+bundle: plain_page
+mode: default
+content:
+  body:
+    weight: 6
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_attachments:
+    weight: 0
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_page_image:
+    weight: 7
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

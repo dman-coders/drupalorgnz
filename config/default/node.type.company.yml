@@ -1,0 +1,17 @@
+uuid: 7ea1c229-5cf2-4843-9469-07b144a1cdbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: ''
+    available_menus: {  }
+name: Company
+type: company
+description: 'A company that will be listed on the site'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: c6961546-5368-4436-99a5-fc434d853e8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.company
+id: node.company.field_region
+field_name: field_region
+entity_type: node
+bundle: company
+label: Region
+description: 'Select one or more regions your company physically operates in. This field is intended for searchers who are looking specifically for ''local'' talent, so use it for that. Use "Nationwide" if you plan to commute to anywhere in the country to meet your clients.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

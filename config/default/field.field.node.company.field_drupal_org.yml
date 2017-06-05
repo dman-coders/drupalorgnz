@@ -1,0 +1,23 @@
+uuid: 7dffda55-4f69-45b2-bc47-0458abe163cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_org
+    - node.type.company
+  module:
+    - link
+id: node.company.field_drupal_org
+field_name: field_drupal_org
+entity_type: node
+bundle: company
+label: 'Profile on drupal.org'
+description: 'Link to your company or individual profile page on Drupal.org. We strongly encourage Drupal Association membership, so please go get a badge there.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

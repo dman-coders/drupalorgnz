@@ -1,0 +1,14 @@
+uuid: edf3f814-f5c2-4bb2-95a1-5c1d1fd12a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.plain_page_creator
+  module:
+    - user
+id: user_remove_role_action.plain_page_creator
+label: 'Remove the Plain Page creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: plain_page_creator

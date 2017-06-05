@@ -1,0 +1,233 @@
+uuid: 10d52a11-8c32-4f6a-bb39-646e87653a14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.company.body
+    - field.field.node.company.field_address
+    - field.field.node.company.field_company_size
+    - field.field.node.company.field_contact_email
+    - field.field.node.company.field_contract_values
+    - field.field.node.company.field_drupal_contribution_areas
+    - field.field.node.company.field_drupal_org
+    - field.field.node.company.field_facebook
+    - field.field.node.company.field_linkedin
+    - field.field.node.company.field_links
+    - field.field.node.company.field_logo
+    - field.field.node.company.field_phone
+    - field.field.node.company.field_region
+    - field.field.node.company.field_sectors
+    - field.field.node.company.field_services
+    - field.field.node.company.field_showcases
+    - field.field.node.company.field_special_expertise
+    - field.field.node.company.field_testimonials
+    - field.field.node.company.field_twitter
+    - field.field.node.company.field_website
+    - image.style.thumbnail
+    - node.type.company
+  module:
+    - image
+    - link
+    - path
+    - text
+    - workbench_moderation
+id: node.company.default
+targetEntityType: node
+bundle: company
+mode: default
+content:
+  body:
+    weight: 5
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 4
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_company_size:
+    weight: 6
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_contact_email:
+    weight: 2
+    type: email_default
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    region: content
+  field_contract_values:
+    weight: 7
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_drupal_contribution_areas:
+    weight: 12
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_drupal_org:
+    weight: 7
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    weight: 6
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_linkedin:
+    weight: 5
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_links:
+    weight: 3
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_logo:
+    weight: 1
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    weight: 3
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_region:
+    weight: 11
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_sectors:
+    weight: 10
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_services:
+    weight: 9
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_showcases:
+    weight: 13
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_special_expertise:
+    weight: 8
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_testimonials:
+    weight: 14
+    type: text_textarea
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_twitter:
+    weight: 4
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_website:
+    weight: 2
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,76 @@
+{
+    "name": "acquia/blt-project",
+    "description": "Project template for Drupal 8 sites built with BLT.",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "acquia/blt": "8.x-dev",
+        "drupal/migrate_tools": "4.x",
+        "drupal/migrate_ui": "^1.1",
+        "drupal/ds": "^3.1",
+        "drupal/block_class": "^1.0@alpha",
+        "drupal/metatag": "^1.1",
+        "drupal/field_group": "^1.0@RC",
+        "drupal/redirect": "^1.0@alpha",
+        "drupal/pathauto": "^1.0",
+        "drupal/token": "^1.0",
+        "drupal/image_effects": "^1.0",
+        "drupal/migrate_upgrade": "3.x"
+    },
+    "require-dev": {
+        "geerlingguy/drupal-vm": "~4.3"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "git init",
+            "blt internal:create-project:init-repo"
+        ]
+    },
+    "extra": {
+        "enable-patching": true,
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "merge-plugin": {
+            "require": [
+                "vendor/acquia/blt/composer.required.json",
+                "vendor/acquia/blt/composer.suggested.json"
+            ],
+            "include": [
+                "blt/composer.overrides.json"
+            ],
+            "merge-extra": true,
+            "merge-extra-deep": true,
+            "merge-scripts": true,
+            "replace": false,
+            "ignore-duplicates": true
+        }
+    }
+}

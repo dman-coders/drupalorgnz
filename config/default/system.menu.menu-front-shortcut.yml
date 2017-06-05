@@ -1,0 +1,8 @@
+uuid: 4553ae99-ca87-4239-b4e4-20ab81a489bf
+langcode: en
+status: true
+dependencies: {  }
+id: menu-front-shortcut
+label: 'Front shortcut'
+description: ''
+locked: false

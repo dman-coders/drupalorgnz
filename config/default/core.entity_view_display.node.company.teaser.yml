@@ -1,0 +1,93 @@
+uuid: f43691b6-4b2e-49d0-9eda-38a55ef36332
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.company.body
+    - field.field.node.company.field_address
+    - field.field.node.company.field_company_size
+    - field.field.node.company.field_contact_email
+    - field.field.node.company.field_contract_values
+    - field.field.node.company.field_drupal_contribution_areas
+    - field.field.node.company.field_drupal_org
+    - field.field.node.company.field_facebook
+    - field.field.node.company.field_linkedin
+    - field.field.node.company.field_links
+    - field.field.node.company.field_logo
+    - field.field.node.company.field_phone
+    - field.field.node.company.field_region
+    - field.field.node.company.field_sectors
+    - field.field.node.company.field_services
+    - field.field.node.company.field_showcases
+    - field.field.node.company.field_special_expertise
+    - field.field.node.company.field_testimonials
+    - field.field.node.company.field_twitter
+    - field.field.node.company.field_website
+    - node.type.company
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.company.teaser
+targetEntityType: node
+bundle: company
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 2
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_logo:
+    label: hidden
+    weight: 1
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: hidden
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_website:
+    label: hidden
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_company_size: true
+  field_contact_email: true
+  field_contract_values: true
+  field_drupal_contribution_areas: true
+  field_drupal_org: true
+  field_facebook: true
+  field_linkedin: true
+  field_links: true
+  field_region: true
+  field_sectors: true
+  field_services: true
+  field_showcases: true
+  field_special_expertise: true
+  field_testimonials: true
+  field_twitter: true

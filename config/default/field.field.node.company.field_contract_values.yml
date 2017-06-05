@@ -1,0 +1,21 @@
+uuid: b0234608-fb79-4d79-9329-f816ba878b77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contract_values
+    - node.type.company
+id: node.company.field_contract_values
+field_name: field_contract_values
+entity_type: node
+bundle: company
+label: 'Contract values'
+description: 'Select one or more entries to show the value of contracts that your business can handle.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

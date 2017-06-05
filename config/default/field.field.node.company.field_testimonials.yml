@@ -1,0 +1,21 @@
+uuid: a7eb3cd2-612e-43d7-ba6f-5ba03a264c41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testimonials
+    - node.type.company
+  module:
+    - text
+id: node.company.field_testimonials
+field_name: field_testimonials
+entity_type: node
+bundle: company
+label: Testimonials
+description: 'Enter brief testimonial statement from your client. Maximum size of 300 words.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

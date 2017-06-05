@@ -1,0 +1,14 @@
+features:
+  name: 0
+  slogan: 0
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://drupalnetnz_logo_web2.png'
+favicon:
+  use_default: 0
+  path: 'public://drupal.org_.nz-favicon.png'
+  mimetype: image/png

@@ -1,0 +1,27 @@
+uuid: 34eab5d6-5698-4d1b-a9dc-2282bb65e768
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.plain_page
+  module:
+    - file
+id: node.plain_page.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: plain_page
+label: 'Drupal Advocacy Downloads'
+description: 'These .pdfs were created by Acquia for allowing other Drupal companies to easily showcase the wide-spread international usage of Drupal web systems across different industries and sectors.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: attachments
+  file_extensions: 'png jpg gif pdf doc odt rtf svg'
+  max_filesize: 5MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,25 @@
+uuid: 998bff98-35e1-40e7-aab2-d30dfda9898d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3fe7b841-1d5f-40ee-a828-0fcedfaa9d4a'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: footertextcopyright
+theme: bartik
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:3fe7b841-1d5f-40ee-a828-0fcedfaa9d4a'
+settings:
+  id: 'block_content:3fe7b841-1d5f-40ee-a828-0fcedfaa9d4a'
+  label: 'Footer text (copyright)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

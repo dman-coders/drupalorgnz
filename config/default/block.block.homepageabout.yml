@@ -1,0 +1,31 @@
+uuid: ee08c19f-fd4d-4449-8602-732ffd17d5c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e5eb4501-001e-433e-aebc-42a5c233c1e1'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: homepageabout
+theme: bartik
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:e5eb4501-001e-433e-aebc-42a5c233c1e1'
+settings:
+  id: 'block_content:e5eb4501-001e-433e-aebc-42a5c233c1e1'
+  label: 'Homepage - About'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

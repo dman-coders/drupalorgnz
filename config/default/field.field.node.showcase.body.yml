@@ -1,0 +1,26 @@
+uuid: c2297ce4-d18c-4a05-ae9c-d4f2f48f0801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.showcase
+  module:
+    - text
+id: node.showcase.body
+field_name: body
+entity_type: node
+bundle: showcase
+label: Body
+description: 'Tell us about the project.'
+required: true
+translatable: false
+default_value:
+  -
+    summary: ''
+    value: "<h3>Overview</h3>\r\n<p>Some content in here</p>\r\n<h3>Challenges</h3>\r\n"
+    format: filtered_html
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

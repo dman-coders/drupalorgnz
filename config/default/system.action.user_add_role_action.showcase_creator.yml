@@ -1,0 +1,14 @@
+uuid: 5b93665a-8796-449a-89b7-6cd6b7941051
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.showcase_creator
+  module:
+    - user
+id: user_add_role_action.showcase_creator
+label: 'Add the Showcase creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: showcase_creator

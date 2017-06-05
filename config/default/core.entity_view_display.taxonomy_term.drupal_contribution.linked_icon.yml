@@ -1,0 +1,33 @@
+uuid: 8a854e62-16b0-47fb-8989-ccf399051b7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.linked_icon
+    - field.field.taxonomy_term.drupal_contribution.field_logo
+    - taxonomy.vocabulary.drupal_contribution
+  module:
+    - image
+    - text
+id: taxonomy_term.drupal_contribution.linked_icon
+targetEntityType: taxonomy_term
+bundle: drupal_contribution
+mode: linked_icon
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_logo:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

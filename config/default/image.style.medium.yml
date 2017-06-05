@@ -1,0 +1,16 @@
+uuid: da23f17f-c3ad-4cfd-b4ef-9138aacb6ea1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Y9NmnZHQq20ASSyTNA6JnwtWrJJiSajOehGDtmUFdM0
+name: medium
+label: medium
+effects:
+  a1abc3d7-4918-4bd3-831b-544b25a0d214:
+    uuid: a1abc3d7-4918-4bd3-831b-544b25a0d214
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 210
+      height: 210

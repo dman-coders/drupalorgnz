@@ -1,0 +1,14 @@
+uuid: 635c80b5-49f6-43c5-b826-2df6c39d11c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.showcase_creator
+  module:
+    - user
+id: user_remove_role_action.showcase_creator
+label: 'Remove the Showcase creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: showcase_creator

@@ -1,0 +1,18 @@
+uuid: 96b3e8c3-08c4-4c39-a24c-00b13e69fad4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.showcase
+id: node.showcase.title
+field_name: title
+entity_type: node
+bundle: showcase
+label: 'Site name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

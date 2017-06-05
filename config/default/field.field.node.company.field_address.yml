@@ -1,0 +1,21 @@
+uuid: 639e46cd-c4fc-4d8d-a871-bd71fa6eba83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.company
+  module:
+    - text
+id: node.company.field_address
+field_name: field_address
+entity_type: node
+bundle: company
+label: Address
+description: 'Street address and/or postal address'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

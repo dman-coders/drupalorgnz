@@ -1,0 +1,38 @@
+uuid: 4298036b-0253-4933-b94b-afd51398f385
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_logo
+    - taxonomy.vocabulary.drupal_contribution
+  module:
+    - image
+id: taxonomy_term.drupal_contribution.field_logo
+field_name: field_logo
+entity_type: taxonomy_term
+bundle: drupal_contribution
+label: 'Badge icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

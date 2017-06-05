@@ -1,0 +1,9 @@
+uuid: 03bf2151-1df3-4104-b16f-f4eb4b741401
+langcode: en
+status: true
+dependencies: {  }
+name: 'Special expertise'
+vid: special_expertise
+description: 'Areas of special expertise for the company'
+hierarchy: 0
+weight: 0

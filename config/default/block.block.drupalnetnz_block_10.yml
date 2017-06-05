@@ -1,0 +1,30 @@
+uuid: 81d2e365-720d-49af-9026-c8460cdf6876
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa17e09b-ccac-4058-9d6c-14b1fd5fb8c3'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: drupalnetnz_block_10
+theme: bartik
+region: highlighted
+weight: -7
+provider: null
+plugin: 'block_content:fa17e09b-ccac-4058-9d6c-14b1fd5fb8c3'
+settings:
+  id: 'block_content:fa17e09b-ccac-4058-9d6c-14b1fd5fb8c3'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

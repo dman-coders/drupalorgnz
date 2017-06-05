@@ -1,0 +1,59 @@
+uuid: f219ebec-0d35-4cbd-a8af-477049621c9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.showcase.body
+    - field.field.node.showcase.field_company
+    - field.field.node.showcase.field_drupal_version
+    - field.field.node.showcase.field_launch_date
+    - field.field.node.showcase.field_sectors
+    - field.field.node.showcase.field_slideshow
+    - field.field.node.showcase.field_website
+    - node.type.showcase
+  module:
+    - link
+    - text
+    - user
+id: node.showcase.teaser
+targetEntityType: node
+bundle: showcase
+mode: teaser
+content:
+  body:
+    label: hidden
+    weight: 4
+    type: text_summary_or_trimmed
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_company:
+    label: hidden
+    weight: 3
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_website:
+    label: hidden
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_drupal_version: true
+  field_launch_date: true
+  field_sectors: true
+  field_slideshow: true

@@ -1,0 +1,50 @@
+uuid: 64d98ece-e689-46ab-8932-19a4c0b25c2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.showcase.body
+    - field.field.node.showcase.field_company
+    - field.field.node.showcase.field_drupal_version
+    - field.field.node.showcase.field_launch_date
+    - field.field.node.showcase.field_sectors
+    - field.field.node.showcase.field_slideshow
+    - field.field.node.showcase.field_website
+    - node.type.showcase
+  module:
+    - link
+    - text
+    - user
+id: node.showcase.default
+targetEntityType: node
+bundle: showcase
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_website:
+    label: hidden
+    weight: 0
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_company: true
+  field_drupal_version: true
+  field_launch_date: true
+  field_sectors: true
+  field_slideshow: true

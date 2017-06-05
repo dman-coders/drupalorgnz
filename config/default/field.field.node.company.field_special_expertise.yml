@@ -1,0 +1,21 @@
+uuid: 553beca8-7246-4ece-9dd0-9a21122ebf8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_expertise
+    - node.type.company
+id: node.company.field_special_expertise
+field_name: field_special_expertise
+entity_type: node
+bundle: company
+label: 'Special expertise'
+description: 'Select any areas of special expertise for your company. Separate multiple specialties with a comma.  If a special expertise is not listed here, it will be added automatically.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

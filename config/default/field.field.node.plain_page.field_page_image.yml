@@ -1,0 +1,38 @@
+uuid: 0afce5a3-a8af-453a-a30a-f23d9680c0f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_image
+    - node.type.plain_page
+  module:
+    - image
+id: node.plain_page.field_page_image
+field_name: field_page_image
+entity_type: node
+bundle: plain_page
+label: 'Page Image'
+description: 'Upload one or more images to appear on pages.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 2MB
+  max_resolution: 1200x1200
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

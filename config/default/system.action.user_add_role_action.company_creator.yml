@@ -1,0 +1,14 @@
+uuid: 12517d74-a7a4-4c7c-94d4-bca439fd52bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.company_creator
+  module:
+    - user
+id: user_add_role_action.company_creator
+label: 'Add the Company creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: company_creator

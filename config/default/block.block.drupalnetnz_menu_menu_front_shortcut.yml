@@ -1,0 +1,29 @@
+uuid: 92a03862-a66c-4d62-888b-f92b3db3a8aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-front-shortcut
+  module:
+    - system
+  theme:
+    - bartik
+id: drupalnetnz_menu_menu_front_shortcut
+theme: bartik
+region: featured_top
+weight: -8
+provider: null
+plugin: 'system_menu_block:menu-front-shortcut'
+settings:
+  id: broken
+  label: 'Front Shortcut Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+    context_mapping: {  }

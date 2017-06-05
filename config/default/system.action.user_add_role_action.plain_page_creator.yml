@@ -1,0 +1,14 @@
+uuid: c297e7a9-f8de-4952-9808-0ae480180d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.plain_page_creator
+  module:
+    - user
+id: user_add_role_action.plain_page_creator
+label: 'Add the Plain Page creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: plain_page_creator

@@ -1,0 +1,9 @@
+uuid: a63a7492-665a-4c9e-9488-c4f526fab893
+langcode: en
+status: true
+dependencies: {  }
+name: 'Drupal Contribution'
+vid: drupal_contribution
+description: 'A taxonomy of different areas where users can contribute to Drupal.'
+hierarchy: 0
+weight: 0

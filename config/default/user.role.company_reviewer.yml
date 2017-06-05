@@ -1,0 +1,18 @@
+uuid: 4f2c3781-b4c2-40d7-bead-4bb6ac3ccc64
+langcode: en
+status: true
+dependencies: {  }
+id: company_reviewer
+label: 'Company reviewer'
+weight: 8
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'delete any company content'
+  - 'edit any company content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_archived transition'
+  - 'use published_published transition'
+  - 'view moderation states'

@@ -1,0 +1,9 @@
+uuid: 254b413e-de67-42cb-9b6d-d45e1a61d474
+langcode: en
+status: true
+dependencies: {  }
+name: Sectors
+vid: sectors
+description: 'List of related sector(s)'
+hierarchy: 0
+weight: 0

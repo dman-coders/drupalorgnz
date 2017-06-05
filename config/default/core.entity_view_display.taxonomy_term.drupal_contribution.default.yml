@@ -1,0 +1,32 @@
+uuid: dc4a866c-e036-4043-96ef-951d575c3669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.drupal_contribution.field_logo
+    - taxonomy.vocabulary.drupal_contribution
+  module:
+    - image
+    - text
+id: taxonomy_term.drupal_contribution.default
+targetEntityType: taxonomy_term
+bundle: drupal_contribution
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_logo:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

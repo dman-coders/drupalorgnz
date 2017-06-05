@@ -1,0 +1,17 @@
+uuid: 7f03fa00-7644-4891-9fbc-efb7a811c083
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: ''
+    available_menus: {  }
+name: Showcase
+type: showcase
+description: 'A NZ Drupal powered website'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

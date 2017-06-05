@@ -1,0 +1,14 @@
+uuid: 3b65ec9a-d40d-4f24-9076-34872d7d9a20
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.showcase_reviewer
+  module:
+    - user
+id: user_remove_role_action.showcase_reviewer
+label: 'Remove the Showcase reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: showcase_reviewer

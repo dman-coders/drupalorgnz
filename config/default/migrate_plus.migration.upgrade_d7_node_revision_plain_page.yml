@@ -1,0 +1,81 @@
+uuid: 50b02472-af89-41d2-8714-da2cae1864d5
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_plain_page
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Node revisions (Plain Page)'
+source:
+  plugin: d7_node_revision
+  node_type: plain_page
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  body:
+    plugin: iterator
+    source: body
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration:
+            - upgrade_d6_filter_format
+            - upgrade_d7_filter_format
+          source: format
+  field_attachments:
+    plugin: iterator
+    source: field_attachments
+    process:
+      target_id: fid
+      display: display
+      description: description
+  field_page_image:
+    plugin: iterator
+    source: field_page_image
+    process:
+      target_id: fid
+      alt: alt
+      title: title
+      width: width
+      height: height
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: plain_page
+migration_dependencies:
+  required:
+    43: upgrade_d7_node_company
+    44: upgrade_d7_node_plain_page
+    45: upgrade_d7_node_showcase
+    46: upgrade_d7_node_webform
+  optional:
+    - upgrade_d6_filter_format
+    - upgrade_d7_filter_format

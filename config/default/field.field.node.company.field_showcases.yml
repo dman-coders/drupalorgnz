@@ -1,0 +1,30 @@
+uuid: 181ed853-8dba-43c5-872f-e3f98b0d1f2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_showcases
+    - node.type.company
+    - node.type.showcase
+id: node.company.field_showcases
+field_name: field_showcases
+entity_type: node
+bundle: company
+label: Showcases
+description: 'Link to Drupal sites being showcased on drupal.net.nz that your business had involvemnt with.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      showcase: showcase
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

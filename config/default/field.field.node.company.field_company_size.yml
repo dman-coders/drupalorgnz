@@ -1,0 +1,23 @@
+uuid: 9f08c871-5649-41ed-84a1-39554ccce838
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_size
+    - node.type.company
+id: node.company.field_company_size
+field_name: field_company_size
+entity_type: node
+bundle: company
+label: 'Company size'
+description: 'Select company size based on staff numbers (including associates and contractors) and/or annual turnover.'
+required: true
+translatable: false
+default_value:
+  -
+    tid: '46'
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

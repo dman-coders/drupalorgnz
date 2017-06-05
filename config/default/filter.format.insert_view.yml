@@ -1,0 +1,14 @@
+uuid: 5b85c0c3-7d3b-4906-b13d-8a37388190ad
+langcode: en
+status: false
+dependencies: {  }
+name: 'Insert view'
+format: insert_view
+weight: -7
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

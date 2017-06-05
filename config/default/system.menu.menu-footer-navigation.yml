@@ -1,0 +1,8 @@
+uuid: 176aaef4-3aae-4fc0-ba25-0b8ce456d8fe
+langcode: en
+status: true
+dependencies: {  }
+id: menu-footer-navigation
+label: 'Footer navigation'
+description: 'Quick links for the footer region'
+locked: false

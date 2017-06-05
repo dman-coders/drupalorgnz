@@ -1,0 +1,26 @@
+uuid: 35c37630-dcc1-4055-8562-c0bfe676fa77
+langcode: en
+status: true
+dependencies: {  }
+id: plain_page_creator
+label: 'Plain Page creator'
+weight: 9
+is_admin: null
+permissions:
+  - 'access image_browser entity browser pages'
+  - 'access media_browser entity browser pages'
+  - 'access panels in-place editing'
+  - 'administer panelizer node plain_page content'
+  - 'administer panelizer node plain_page layout'
+  - 'change layouts in place editing'
+  - 'create plain_page content'
+  - 'create url aliases'
+  - 'edit own plain_page content'
+  - 'use draft_draft transition'
+  - 'use draft_needs_review transition'
+  - 'use needs_review_needs_review transition'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view plain_page revisions'

@@ -1,0 +1,37 @@
+uuid: 7d205b22-496a-40a9-b442-5f221d9ae7b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.plain_page.body
+    - field.field.node.plain_page.field_attachments
+    - field.field.node.plain_page.field_page_image
+    - node.type.plain_page
+  module:
+    - file
+    - text
+    - user
+id: node.plain_page.default
+targetEntityType: node
+bundle: plain_page
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attachments:
+    label: above
+    weight: 2
+    type: file_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_page_image: true

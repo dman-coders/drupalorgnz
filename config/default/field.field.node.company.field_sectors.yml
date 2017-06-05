@@ -1,0 +1,21 @@
+uuid: b72ce095-029e-4b18-b7b1-3c84658ee57c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sectors
+    - node.type.company
+id: node.company.field_sectors
+field_name: field_sectors
+entity_type: node
+bundle: company
+label: Sectors
+description: 'Select one or more *primary* business sectors for your company. To avoid keyword-stuffing, this field is limited to up to 10 values - please just choose your specialist strengths or areas you have proven showcases for.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

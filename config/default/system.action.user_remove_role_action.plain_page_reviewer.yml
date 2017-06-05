@@ -1,0 +1,14 @@
+uuid: 26feab28-df1c-4522-81a8-f6e5d0857dd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.plain_page_reviewer
+  module:
+    - user
+id: user_remove_role_action.plain_page_reviewer
+label: 'Remove the Plain Page reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: plain_page_reviewer
