@@ -359,3 +359,38 @@
 #    'uri' => 'http://example.com',
 #    'root' => $aliases['dev']['root'],
 #  ) + $aliases['server'];
+
+/** Taranto server */
+$aliases['server'] = array(
+  'remote-host' => 'taranto.coders.co.nz',
+  'remote-user' => 'aegir',
+  'os' => 'Linux',
+  'php' => '/usr/bin/php',
+  'ssh-options' => ' -i /Users/dan/.ssh/id_rsa-sparks_aegir ',
+  'path-aliases' => array (
+    '%drush' => '/var/aegir/.composer/vendor/drush/drush',
+    '%drush-script' => '/var/aegir/.composer/vendor/bin/drush',
+    '%dump-dir' => '/tmp',
+  ),
+);
+
+$aliases['live'] = array(
+  'uri' => 'http://d8.drupal.org.nz/',
+  'root' => '/var/www/drupalnetnz/d8/docroot',
+) + $aliases['server'];
+
+
+// Local environment.
+$aliases['drupal.org.nz.local'] = array(
+  'root' => '/var/www/drupal.org.nz/docroot',
+  'uri' => 'http://local.drupal.org.nz',
+  );
+// Add remote connection options when alias is used outside VM.
+if ('vagrant' != $_SERVER['USER']) {
+  $aliases['drupal.org.nz.local'] += array(
+    'remote-host' => 'local.drupal.org.nz',
+    'remote-user' => 'vagrant',
+    'ssh-options' => '-o PasswordAuthentication=no -i ' . drush_server_home() . '/.vagrant.d/insecure_private_key'
+  );
+}
+
