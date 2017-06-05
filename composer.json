@@ -7,7 +7,9 @@
     "require": {
         "acquia/blt": "8.x-dev"
     },
-    "require-dev": {},
+    "require-dev": {
+        "geerlingguy/drupal-vm": "~4.3"
+    },
     "scripts": {
         "post-create-project-cmd": [
             "git init",
